@@ -1,7 +1,7 @@
 # DCGAN Unsupervised Representation Learning
 
 This project implements a 32×32 Deep Convolutional Generative Adversarial Network (DCGAN) in TensorFlow and evaluates the learned discriminator representations on downstream image-classification tasks.
-
+This repository is a portfolio version of a team course project at Columbia University. The code and materials included here focus on my individual contributions.
 ## Project Overview
 
 The model is trained on Mini-ImageNet using unsupervised adversarial learning. After training, the discriminator is frozen and used as a feature extractor for CIFAR-10 and SVHN.
