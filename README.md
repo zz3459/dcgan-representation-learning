@@ -1,3 +1,56 @@
+# DCGAN Unsupervised Representation Learning
+
+TensorFlow implementation of DCGAN for unsupervised representation learning and downstream image classification.
+
+
+This repository is a portfolio version of a team project completed
+for Columbia University's E4040 course.
+
+The materials highlighted in this repository focus on my individual
+contributions to the project
+
+## Overview
+
+This project reproduces and extends experiments from
+"Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks".
+
+The DCGAN is trained on CelebA and Mini-ImageNet.
+The discriminator is then reused as a frozen feature extractor
+for downstream classification on CIFAR-10 and SVHN.
+
+## My Contributions
+
+- Implemented the 32×32 DCGAN Generator and Discriminator.
+- Built data pipelines for Mini-ImageNet, CIFAR-10, and SVHN.
+- Conducted Mini-ImageNet representation-learning experiments.
+- Extracted discriminator features for CIFAR-10 and SVHN.
+- Trained Linear L2-SVM classifiers for downstream evaluation.
+- Contributed to experiment analysis and technical report writing.
+
+## Pipeline
+
+Mini-ImageNet
+→ DCGAN Training
+→ Frozen Discriminator
+→ Feature Extraction
+→ Linear L2-SVM
+→ CIFAR-10 / SVHN Evaluation
+
+## Results
+
+| Dataset | Setting | Result |
+|---|---|---|
+| CIFAR-10 | Linear L2-SVM | 57% accuracy |
+| SVHN | 1,000 labeled samples | ~40.8% test error |
+
+## Tech Stack
+
+Python · TensorFlow · Keras · NumPy · scikit-learn · DCGAN · SVM
+
+
+
+**************************
+
 # E4040 Fall 2025 Project  
 ## Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks
 
